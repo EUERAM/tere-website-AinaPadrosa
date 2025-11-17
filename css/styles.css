@@ -70,7 +70,13 @@ background: var(--background);
     font-weight: 700;
     line-height: 0;
     margin-top: 30px;
+    transition: all 0.2s;
 
+}
+
+
+.button-download:hover{
+    transform: scale(1.05);
 }
 
 .hero .columna-dreta {
@@ -111,7 +117,6 @@ background: var(--background);
 
 .rectangle{
     display: flex;
-    padding: 45px 70px;
     align-items: center;
     gap: 127px;
     flex-shrink: 0;
@@ -120,15 +125,17 @@ background: var(--background);
     background: var(--Green, #75BF7A);
     margin-left: 80px;
     margin-right: 82px;
+    height: 157px;
 }
 
 .subtitle-2{
     color: #FFF;
 font-family: Inter;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 33px;
+margin-left: 70px;
 }
 
 .button-group-2{
@@ -138,12 +145,10 @@ line-height: 33px;
 
 .phone{
     display: flex;
-height: 67px;
-padding: 38px 196px 29px 35px;
+padding: 0 196px 0 35px;
 align-items: center;
 border-radius: 5px;
 background: #FFF;
-color: #DADADA;
 border: none;
 
 font-family: Inter;
@@ -151,6 +156,10 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 0;
+}
+
+.phone::placeholder {
+    color: #DADADA;
 }
 
 .apply{
@@ -169,6 +178,12 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: 0;
+transition: all 0.2s;
+margin-right: 70px;
+}
+
+.apply:hover{
+    transform: scale(1.05);
 }
 
 
@@ -189,7 +204,13 @@ line-height: 0;
 	font-style: normal;
 	text-decoration: none;
 	text-transform: none;
+    transition: all 0.2s;
 }
+
+.button:hover{
+    transform: scale(1.05);
+}
+
 .section-title {
 	font-size: 47px;
 	font-family: Inter;
@@ -367,56 +388,45 @@ text-align: center;
 }
 
 .section-1{
-    height: 304px;
     margin-right: 215px;
     margin-top: 72px;
     background: white;
     display: flex;
-    gap: 1rem;
+    gap: 302.82px;
     align-items: center;
 }
 
-.section-1 .section-text{
-    display: flex;
-    flex-direction: column;
-    height: 197px;
-    margin-bottom: 65.91px;
-    justify-content: center;
-    align-items: center;     
-    text-align: center;
-    flex: 1;
+.section-text{
+    margin-left: 38px;  
+    flex-direction: column; 
+    height: 171px; 
 }
 
-.title-benefits{
-    color: #000;
-    font-family: Inter;
-    font-size: 33.943px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32.5px;
-}
 
-.section-1 .number-text{
-    margin-left: 38px;
-    flex-direction: column;
+
+.number-text{
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     gap: 28px;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 52.91px;
 }
 
 .number-text h1{
     color: #75BF7A;
+
 font-family: Inter;
 font-size: 88px;
 font-style: normal;
 font-weight: 500;
 line-height: 118.8px;
+margin: 0;
+padding: 0;
+text-align: start;
+
 }
 
-.number-text p{
+.number-text h2{
     color: #000;
 
 font-family: Inter;
@@ -424,21 +434,22 @@ font-size: 33.943px;
 font-style: normal;
 font-weight: 400;
 line-height: 32.5px; 
+text-align: start;
+
 }
 
-.subtitle-3{
+.subtitle-3 {
     color: #9E9DA2;
-margin-left: 38px;
 font-family: Inter;
-font-size: 18px;
+font-size: 15px;
 font-style: normal;
 font-weight: 500;
 line-height: 26px;
-margin-top: -80px;
+align-items: flex-start;
+margin: 0;
 }
 
 .section-2{
-    height: 302.82px;
     margin-right: 0px;
     margin-left: 215px;
     margin-top: 72px;
@@ -446,45 +457,55 @@ margin-top: -80px;
     display: flex;
     gap: 262px;
     align-items: center; 
+    gap: 302.82px;
 }
 
 .number-text-1 h1{
     color: #75BF7A;
+
 font-family: Inter;
 font-size: 88px;
 font-style: normal;
 font-weight: 500;
 line-height: 118.8px;
+margin: 0;
+padding: 0;
+text-align: end;
 }
 
-.number-text-1 p{
-    color: #000;
+.number-text-1 h2{
+       color: #000;
 
 font-family: Inter;
 font-size: 33.943px;
 font-style: normal;
 font-weight: 400;
 line-height: 32.5px; 
+text-align: end;
 }
 
 .number-text-1{
-    margin-left: 38px;
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     gap: 28px;
     align-items: center;
-    margin-top: -98.5px;
 }
 
-.section-text-1{
-    width: 393px;
-    height: 153px;
-    margin-left: auto;
+.section-text-1{  
+    flex-direction: column; 
+    height: 171px; 
 }
    
-
-
 .benefit-1{
-    margin-left: 0px;
+    margin-top: 24.73px;
+    margin-bottom: 24.73px;
+}
+
+.benefit-2{
+    margin-left: 66px;
+    margin-top: 24.73px;
+    margin-bottom: 24.73px;
 }
 
 .container-4{
@@ -541,6 +562,11 @@ font-style: normal;
 font-weight: 700;
 line-height: 0;
 border: none;
+transition: all 0.2s;
+}
+
+.button-download-footer:hover{
+    transform: scale(1.05);
 }
 
 .final-text{
